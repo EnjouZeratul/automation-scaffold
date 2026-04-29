@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+uv.lock
+03-data-scraper/logs/
+*.log

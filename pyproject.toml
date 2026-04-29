@@ -1,0 +1,11 @@
+[project]
+name = "automation-scaffold"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.uv.workspace]
+members = ["shared", "01-ai-table", "02-rpa", "03-data-scraper", "04-agent"]
+
+[tool.uv]
+dev-dependencies = ["pytest", "pytest-asyncio", "httpx"]
