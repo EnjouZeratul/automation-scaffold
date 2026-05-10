@@ -34,7 +34,7 @@ cp .env.example .env
 ### 3. 运行测试
 
 ```bash
-cd D:/TA/automation-scaffold
+cd automation-scaffold
 
 # 运行全部测试
 python -m pytest shared/tests/ -v

@@ -8,13 +8,13 @@
 
 ```python
 import sys
-sys.path.append(r"D:\TA\automation-scaffold\02-rpa")
+sys.path.append(r"automation-scaffold\02-rpa")
 from processors.web_scraper import WebScrapeProcessor
 
 proc = WebScrapeProcessor()
-df = proc.load_csv(r"C:\temp\export.csv")
+df = proc.load_csv(r"/tmp\export.csv")
 result = proc.process(df)
-proc.save(result, r"C:\temp\output.csv")
+proc.save(result, r"/tmp\output.csv")
 ```
 
 ## 可用处理器

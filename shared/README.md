@@ -26,7 +26,7 @@ token = await client.get_access_token()
 ## 测试
 
 ```bash
-cd D:/TA/automation-scaffold
+cd automation-scaffold
 python -m pytest shared/tests/ -v
 ```
 

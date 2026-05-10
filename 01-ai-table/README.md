@@ -15,7 +15,7 @@
 
 ```bash
 # 建表
-cd D:/TA/automation-scaffold/01-ai-table
+cd automation-scaffold/01-ai-table
 python main.py create --title "测试表"
 
 # AI 批量处理（情感分析）
@@ -33,7 +33,7 @@ python main.py watch --spreadsheet-token <token> --sheet-id 0 --interval 30
 ## 测试
 
 ```bash
-cd D:/TA/automation-scaffold
+cd automation-scaffold
 python -m pytest 01-ai-table/tests/ -v
 ```
 

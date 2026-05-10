@@ -87,7 +87,7 @@ RPA_ENCRYPT_KEY=
 - [ ] **Step 4: 验证 workspace 初始化**
 
 ```bash
-cd D:/TA/automation-scaffold
+cd automation-scaffold
 uv sync
 ```
 Expected: 成功安装，无 error
@@ -230,7 +230,7 @@ def test_settings_from_env(monkeypatch):
 - [ ] **Step 5: 运行测试**
 
 ```bash
-cd D:/TA/automation-scaffold
+cd automation-scaffold
 uv run pytest shared/tests/ -v
 ```
 Expected: 2 PASS
@@ -735,7 +735,7 @@ async def test_create_table_dingtalk():
 - [ ] **Step 4: 运行测试**
 
 ```bash
-cd D:/TA/automation-scaffold/01-ai-table
+cd automation-scaffold/01-ai-table
 uv run pytest tests/test_table_ops.py -v
 ```
 
@@ -958,7 +958,7 @@ if __name__ == "__main__":
 - [ ] **Step 3: 运行测试**
 
 ```bash
-cd D:/TA/automation-scaffold/01-ai-table
+cd automation-scaffold/01-ai-table
 uv run pytest tests/ -v
 ```
 
@@ -1201,13 +1201,13 @@ if __name__ == "__main__":
 
 ```python
 import sys
-sys.path.append(r"D:\TA\automation-scaffold\02-rpa")
+sys.path.append(r"automation-scaffold\02-rpa")
 from processors.web_scraper import WebScrapeProcessor
 
 proc = WebScrapeProcessor()
-df = proc.load_csv(r"C:\temp\export.csv")
+df = proc.load_csv(r"/tmp\export.csv")
 result = proc.process(df)
-proc.save(result, r"C:\temp\output.csv")
+proc.save(result, r"/tmp\output.csv")
 ```
 
 ## MCP Server 配置
@@ -1221,7 +1221,7 @@ proc.save(result, r"C:\temp\output.csv")
 - [ ] **Step 7: 运行测试**
 
 ```bash
-cd D:/TA/automation-scaffold/02-rpa
+cd automation-scaffold/02-rpa
 uv run pytest tests/ -v
 ```
 
@@ -1672,7 +1672,7 @@ def test_normalize_dates():
 - [ ] **Step 11: 运行测试**
 
 ```bash
-cd D:/TA/automation-scaffold/03-data-scraper
+cd automation-scaffold/03-data-scraper
 uv run pytest tests/ -v
 ```
 
@@ -2247,7 +2247,7 @@ def test_parse_plain():
 - [ ] **Step 12: 运行测试**
 
 ```bash
-cd D:/TA/automation-scaffold/04-agent
+cd automation-scaffold/04-agent
 uv run pytest tests/ -v
 ```
 
